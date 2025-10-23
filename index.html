@@ -5,6 +5,35 @@
     <title>Szablon strony internetowej</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .search-input {
+            background-color: white;
+            color: white;
+            border: 2px solid black;
+        }
+
+        .search-input::placeholder
+        {
+            color: #6c757d;
+        }
+        .search-input:focus
+        {
+            border: 2px solid blue;
+            box-shadow: 0 0 0px;
+        }
+        .nav-link
+        {
+            color: blue;
+        }
+        .active
+        {
+            color: blue;
+        }
+        .naglowek
+        {
+
+        }
+    </style>
 </head>
 <body>
 
@@ -22,15 +51,24 @@
                      </button>
                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                          <div class="navbar-nav">
-                             <a class="nav-link active" aria-current="page" href="index.html">Strona Główna</a>
-                             <a class="nav-link active" href="o_nas.html">O nas</a>
-                             <a class="nav-link active" href="kontakt.html">Kontakt</a>
+                             <form class="d-flex me-3" role="search">
+                                 <input class="form-control me-2 search-input" type="search" placeholder="Numer zamówenia" aria-label="Szukaj">
+                             </form>
+
+                             <a class="nav-link active" aria-current="page" href="index.html" style="color: blue">Strona Główna</a>
+                             <a class="nav-link active" href="o_nas.html" style="color: blue">O nas</a>
+                             <a class="nav-link active" href="kontakt.html" style="color: blue">Kontakt</a>
                          </div>
                      </div>
                  </div>
              </nav>
          </div>
      </nav>
+     <br><br>
+     <div class="naglowek">
+     <h1>Naprawimy każdą twoją elektronike!</h1>
+     <button type="button" class="btn btn-primary">Dowiedz się więcej</button>
+     </div>
  </div>
 
 
