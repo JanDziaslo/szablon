@@ -9,7 +9,7 @@
         .search-input {
             background-color: white;
             color: white;
-            border: 2px solid black;
+            border: 2px solid blue;
         }
 
         .search-input::placeholder
@@ -35,17 +35,21 @@
         }
         .uslugi
         {
-            padding: 15px;
+            margin-top: 15px;
+        }
+        .uslugi span
+        {
+
         }
     </style>
 </head>
 <body>
 
  <div class="col">
-     <nav class="navbar bg-body-tertiary">
+     <nav class="navbar bg-body-tertiary" style="justify-content: center;">
          <div class="container-fluid">
-             <a class="navbar-brand" href="index.html" style="color: blue;">
-                 <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top">
+             <a class="navbar-brand" href="index.html" style="color: blue; align-items: center;">
+                 <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top" style="align-items: center;">
                  TECH SERWIS
              </a>
              <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -74,12 +78,21 @@
          </div>
      </nav>
      <div class="uslugi">
-     <div class="text-center">
-         <h1>Nasze usługi</h1>
+         <div class="text-center">
+             <h1>Nasze usługi</h1>
+         </div>
+         <div class="text-center" style="display: flex; gap: 40px; align-items: center; justify-content: center; flex-wrap: wrap;">
+             <img src="img/telefon.png" alt="telefon" width="100">
+             <span class="text-center" style="font-size: xx-large; max-width: 150px;">Naprawa telefonów</span>
+             <img src="img/tablet.png" alt="tablet" width="100">
+             <span style="font-size: xx-large; max-width: 140px;">Naprawa tabletów</span>
+             <img src="img/komputer.png" alt="komputer" width="100">
+             <span class="text-center" style="font-size: xx-large; max-width: 170px;">Naprawa komputerów</span>
+             <img src="img/konsola.png" alt="konsola" width="100">
+             <span class="text-center" style="font-size: xx-large; max-width: 120px;">Naprawa konsol</span>
+         </div>
      </div>
-     <img src="img/telefon.png" alt="telefon" width="100" >
-         <span style="font-size: x-large">Naprawa telefonów</span>
-     </div>
+
  </div>
 
 
