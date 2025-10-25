@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body, .col {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.search-input {
+    border: 2px solid blue;
+}
+
+.search-input:focus
+{
+    border: 2px solid blue;
+    box-shadow: 0 0 0px;
+}
+.nav-link
+{
+    color: blue;
+}
+.active
+{
+    color: blue;
+}
+.naglowek
+{
+    padding: 15px;
+}
+.uslugi
+{
+    margin-top: 15px;
+}
+.uslugi h2
+{
+    margin-bottom: 12px;
+}
+.uslugi-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.usluga-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+.usluga-item img
+{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+.usluga-item span
+{
+    font-size: x-large;
+    text-align: center;
+    width: 100%;
+}
+.opa
+{
+    margin: 12px;
+}
+.opinie
+{
+    padding: 12px 15px;
+    margin: 0;
+}
+.wiadomosc
+{
+    padding: 12px 15px;
+    margin: 0;
+    max-width: 100%;
+}
+.opinie span
+{
+    border: 2px solid white;
+    display: block;
+    text-align: center;
+    width: 35%;
+
+}
+.opinie p
+{
+    text-align: left;
+
+}
+.opinie .card
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.opinie .card-body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.opinie .card-text:first-child
+{
+    margin-bottom: 20px;
+}
+.opinie .card-text:last-child
+{
+    margin-top: auto;
+    text-align: left;
+}

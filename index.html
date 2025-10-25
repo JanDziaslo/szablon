@@ -5,52 +5,16 @@
     <title>Szablon strony internetowej</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <style>
-        .search-input {
-            background-color: white;
-            color: white;
-            border: 2px solid blue;
-        }
-
-        .search-input::placeholder
-        {
-            color: #6c757d;
-        }
-        .search-input:focus
-        {
-            border: 2px solid blue;
-            box-shadow: 0 0 0px;
-        }
-        .nav-link
-        {
-            color: blue;
-        }
-        .active
-        {
-            color: blue;
-        }
-        .naglowek
-        {
-            padding: 15px;
-        }
-        .uslugi
-        {
-            margin-top: 15px;
-        }
-        .uslugi span
-        {
-
-        }
-    </style>
+    <link rel="stylesheet" href="bootstrap/css/style.css">
 </head>
 <body>
 
  <div class="col">
      <nav class="navbar bg-body-tertiary" style="justify-content: center;">
          <div class="container-fluid">
-             <a class="navbar-brand" href="index.html" style="color: blue; align-items: center;">
+             <a class="navbar-brand" href="index.html" style="color: #23589C; align-items: center;">
                  <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top" style="align-items: center;">
-                 TECH SERWIS
+                 <span style="margin-left: 5px">TECH SERWIS</span>
              </a>
              <nav class="navbar navbar-expand-lg bg-body-tertiary">
                  <div class="container-fluid">
@@ -63,9 +27,9 @@
                                  <input class="form-control me-2 search-input" type="search" placeholder="Numer zamówenia" aria-label="Szukaj">
                              </form>
 
-                             <a class="nav-link active" aria-current="page" href="index.html" style="color: blue">Strona Główna</a>
-                             <a class="nav-link active" href="o_nas.html" style="color: blue">O nas</a>
-                             <a class="nav-link active" href="kontakt.html" style="color: blue">Kontakt</a>
+                             <a class="nav-link active" aria-current="page" href="index.html" style="color: #23589C">Strona Główna</a>
+                             <a class="nav-link active" href="o_nas.html" style="color: #23589C">O nas</a>
+                             <a class="nav-link active" href="kontakt.html" style="color: #23589C">Kontakt</a>
                          </div>
                      </div>
                  </div>
@@ -74,25 +38,78 @@
          <div class="naglowek bg-body-tertiary text-center">
              <br>
              <h1>Naprawimy każdą twoją elektronike!</h1><br>
-             <button type="button" class="btn opa btn-primary">Dowiedz się więcej</button>
+             <button type="button" class="btn btn-primary">Dowiedz się więcej</button>
          </div>
      </nav>
      <div class="uslugi">
          <div class="text-center">
-             <h1>Nasze usługi</h1>
+             <h2>Nasze usługi</h2>
          </div>
-         <div class="text-center" style="display: flex; gap: 40px; align-items: center; justify-content: center; flex-wrap: wrap;">
-             <img src="img/telefon.png" alt="telefon" width="100">
-             <span class="text-center" style="font-size: xx-large; max-width: 150px;">Naprawa telefonów</span>
-             <img src="img/tablet.png" alt="tablet" width="100">
-             <span style="font-size: xx-large; max-width: 140px;">Naprawa tabletów</span>
-             <img src="img/laptok.png" alt="komputer" width="100">
-             <span class="text-center" style="font-size: xx-large; max-width: 170px;">Naprawa komputerów</span>
-             <img src="img/konsola.png" alt="konsola" width="100">
-             <span class="text-center" style="font-size: xx-large; max-width: 120px;">Naprawa konsol</span>
+         <div class="uslugi-container">
+             <div class="usluga-item">
+                 <img src="img/telefon.png" alt="telefon">
+                 <span>Naprawa telefonów</span>
+             </div>
+             <div class="usluga-item">
+                 <img src="img/tablet.png" alt="tablet">
+                 <span>Naprawa tabletów</span>
+             </div>
+             <div class="usluga-item">
+                 <img src="img/laptok.png" alt="komputer">
+                 <span>Naprawa komputerów</span>
+             </div>
+             <div class="usluga-item">
+                 <img src="img/konsola.png" alt="konsola">
+                 <span>Naprawa konsol</span>
+             </div>
+         </div>
+         <h2 class="text-center opa">I wiele więcej</h2>
+     </div>
+     <div class="opinie">
+         <h2 class="text-center">Opinie innych klientów o nas</h2><br>
+         <div class="row g-4">
+             <div class="col-md-6">
+                 <div class="card">
+                     <div class="card-body">
+                         <p class="card-text">Szybka naprawa laptopa – wymiana dysku i czyszczenie w jeden dzień. Fikuśna obsługa i uczciwe ceny. Polecam!</p>
+                         <p class="card-text"><strong>Wilson "Dziad" Łosiento</strong></p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                 <div class="card">
+                     <div class="card-body">
+                         <p class="card-text">Profesjonalna diagnoza problemu z płytą główną. Otrzymałam szczegółowe wyjaśnienie usterki i kilka opcji naprawy. Serwis godny zaufania.</p>
+                         <p class="card-text"><strong>Eugeniusz "Milord" Brodawka</strong></p>
+                     </div>
+                 </div>
+             </div>
          </div>
      </div>
+     <div class="wiadomosc">
+         <h2 class="text-center mb-4">Napisz do nas!</h2>
+         <div class="row g-3">
+             <div class="col-md-6">
+                 <div class="form-floating ">
+                     <input type="text" class="form-control" id="floatingtext" placeholder="Imię">
+                     <label for="floatingtext">Imię</label>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                 <div class="form-floating mb-3">
+                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                     <label for="floatingInput">Email</label>
+                 </div>
+             </div>
+             <div class="col-12">
+                 <div class="form-floating">
+                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
+                     <label for="floatingTextarea2">Wiadomość</label>
+                 </div>
+             </div>
+         </div>
 
+     </div>
  </div>
 
 
