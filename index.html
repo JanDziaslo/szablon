@@ -2,6 +2,7 @@
 <html lang="pl" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Szablon strony internetowej</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -10,37 +11,32 @@
 <body>
 
  <div class="col">
-     <nav class="navbar bg-body-tertiary" style="justify-content: center;">
+     <nav class="navbar navbar-expand-md bg-body-tertiary">
          <div class="container-fluid">
-             <a class="navbar-brand" href="index.html" style="color: #23589C; align-items: center;">
-                 <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top" style="align-items: center;">
+             <a class="navbar-brand" href="index.html" style="color: #23589C;">
+                 <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-text-top">
                  <span style="margin-left: 5px">TECH SERWIS</span>
              </a>
-             <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                 <div class="container-fluid">
-                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                         <span class="navbar-toggler-icon"></span>
-                     </button>
-                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                         <div class="navbar-nav">
-                             <form class="d-flex me-3" role="search">
-                                 <input class="form-control me-2 search-input" type="search" placeholder="Numer zamówenia" aria-label="Szukaj">
-                             </form>
-
-                             <a class="nav-link active" aria-current="page" href="index.html" style="color: #23589C">Strona Główna</a>
-                             <a class="nav-link active" href="o_nas.html" style="color: #23589C">O nas</a>
-                             <a class="nav-link active" href="kontakt.html" style="color: #23589C">Kontakt</a>
-                         </div>
-                     </div>
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+                 <div class="navbar-nav ms-auto">
+                     <form class="d-flex me-2 mb-2 mb-md-0" role="search">
+                         <input class="form-control me-2 search-input" type="search" placeholder="Numer zamówienia" aria-label="Szukaj">
+                     </form>
+                     <a class="nav-link active" aria-current="page" href="index.html" style="color: #23589C">Strona Główna</a>
+                     <a class="nav-link" href="o_nas.html" style="color: #23589C">O nas</a>
+                     <a class="nav-link" href="kontakt.html" style="color: #23589C">Kontakt</a>
                  </div>
-             </nav>
-         </div>
-         <div class="naglowek bg-body-tertiary text-center">
-             <br>
-             <h1>Naprawimy każdą twoją elektronike!</h1><br>
-             <button type="button" class="btn btn-primary">Dowiedz się więcej</button>
+             </div>
          </div>
      </nav>
+     <div class="naglowek bg-body-tertiary text-center">
+         <br>
+         <h1>Naprawimy każdą twoją elektronike!</h1><br>
+         <button type="button" class="btn btn-secondary">Dowiedz się więcej</button>
+     </div>
      <div class="uslugi">
          <div class="text-center">
              <h2>Nasze usługi</h2>
@@ -107,9 +103,45 @@
                      <label for="floatingTextarea2">Wiadomość</label>
                  </div>
              </div>
-         </div>
 
+         </div>
+         <div class="text-center mt-3">
+         <button type="button" class="btn btn-secondary">Wyślij</button>
+         </div>
      </div>
+     <footer class="footer bg-body-tertiary mt-5">
+         <div class="footer-content">
+             <div class="footer-section">
+                 <h5>Godziny otwarcia</h5>
+                 <ul>
+                     <li><strong>Poniedziałek - Piątek:</strong> 8:00 - 18:00</li>
+                     <li><strong>Sobota:</strong> 8:00 - 14:00</li>
+                     <li><strong>Niedziela:</strong> Zamknięte</li>
+                 </ul>
+             </div>
+             <div class="footer-section">
+                 <h5>Nasze usługi</h5>
+                 <ul>
+                     <li>Naprawa telefonów</li>
+                     <li>Naprawa tabletów</li>
+                     <li>Naprawa laptopów</li>
+                     <li>Naprawa konsol</li>
+                     <li>I wiele więcej</li>
+                 </ul>
+             </div>
+             <div class="footer-section">
+                 <h5>Szybki kontakt</h5>
+                 <ul>
+                     <li><strong>Telefon:</strong> +227 213 769 420</li>
+                     <li><strong>Email:</strong> jan.dziaslo@gmail.com</li>
+                     <li><strong>Adres:</strong> Siedlce, ul. czarna 2137</li>
+                 </ul>
+             </div>
+         </div>
+         <div class="footer-bottom text-center">
+             <p>&copy; 2025 Tech Serwis. Wszystkie prawa zastrzeżone. | Siedlce | 8 lat doświadczenia w serwisie elektroniki</p>
+         </div>
+     </footer>
  </div>
 
 
