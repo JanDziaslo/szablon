@@ -8,7 +8,7 @@ body, .col {
 }
 
 .search-input {
-    border: 2px solid blue;
+    border: 2px solid lightblue;
 }
 
 .search-input:focus
@@ -24,6 +24,22 @@ body, .col {
 {
     color: blue;
 }
+.nawigacja-stron a
+{
+    color: lightblue;
+}
+.naglowek p {
+    max-width: 1250px;
+    display: inline-block;
+}
+.zaufanie p
+{
+    padding: 15px;
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Responsywność navbar */
 .navbar {
     padding: 0.5rem 1rem;

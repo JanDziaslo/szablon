@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szablon strony internetowej</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+</head>
+<body>
+
+<div class="col">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: lightblue;">
+                <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-middle">
+                <span style="margin-left: 5px">TECH SERWIS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto nawigacja-stron">
+                    <form class="d-flex me-2 mb-2 mb-md-0" role="search">
+                        <input class="form-control me-2 search-input" type="search" placeholder="Numer zamówienia" aria-label="Szukaj">
+                    </form>
+                    <a class="nav-link" href="index.html">Strona Główna</a>
+                    <a class="nav-link" href="o_nas.html">O nas</a>
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="naglowek bg-body-tertiary text-center">
+        <br>
+        <h1>O nas</h1><br>
+        <p>Jesteśmy zespołem doświadczonych techników specjalizujących się w naprawie elektroniki. Od 8 lat świadczymy usługi naprawcze dla klientów indywidualnych oraz firm, oferując szybkie i skuteczne rozwiązania dla różnorodnych problemów z urządzeniami elektronicznymi.</p>
+    </div>
+    <div class="uslugi">
+        <div class="text-center">
+            <h2>Nasze Wartości</h2><br>
+        </div>
+        <div class="uslugi-container">
+            <div class="usluga-item">
+                <img src="img/gwiazdka.png" alt="gwiazdka">
+                <span>Profesjonalizm</span>
+            </div>
+            <div class="usluga-item">
+                <img src="img/tarcza.png" alt="tarcza">
+                <span>Zaufanie</span>
+            </div>
+            <div class="usluga-item">
+                <img src="img/serce.png" alt="serce">
+                <span>Doświadczenie</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="opinie">
+        <h2 class="text-center">Dlaczego warto nam zaufać?</h2><br>
+       <div class="zaufanie">
+           <p class="border rounded text-center"><strong> Siedlce – Twój partner w naprawach elektroniki</strong><br>
+
+               TechSerwis Siedlce działa na rynku od 8 lat, zdobywając zaufanie tysięcy klientów z Siedlec i okolic. Jesteśmy jedną z najbardziej rozpoznawalnych i cenionych firm serwisowych w regionie, co zawdzięczamy profesjonalizmowi, rzetelności oraz indywidualnemu podejściu do każdego zlecenia.
+
+               <br><strong> Zakres naszych usług</strong><br>
+               Nasza firma specjalizuje się w profesjonalnych naprawach sprzętu elektronicznego, oferując kompleksowe rozwiązania techniczne dla klientów indywidualnych i firm. Wykonujemy naprawy komputerów stacjonarnych i laptopów, smartfonów i tabletów, sprzętu AGD oraz elektroniki użytkowej. Nasz zespół doświadczonych techników posiada wiedzę i umiejętności pozwalające na szybką diagnostykę oraz skuteczną naprawę nawet najbardziej skomplikowanych usterek.
+
+               <br><strong> Dlaczego warto nas wybrać</strong><br>
+               Stawiamy na transparentność – każdy klient otrzymuje szczegółową diagnozę problemu oraz wycenę naprawy przed rozpoczęciem prac. Korzystamy wyłącznie z oryginalnych lub wysokiej jakości zamienników części, co gwarantuje długotrwałość napraw. Oferujemy gwarancję na wykonane usługi, co potwierdza nasze przekonanie o jakości świadczonych usług.
+
+               <br>Działamy szybko i efektywnie – rozumiemy, jak ważny jest sprawny sprzęt w codziennym życiu i pracy, dlatego dokładamy wszelkich starań, aby czas oczekiwania na naprawę był jak najkrótszy. Naszym priorytetem jest satysfakcja klienta oraz budowanie długotrwałych relacji opartych na zaufaniu i profesjonalizmie.</p>
+       </div>
+    </div>
+    <div class="wiadomosc">
+        <h2 class="text-center mb-4">Napisz do nas!</h2>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <div class="form-floating ">
+                    <input type="text" class="form-control" id="floatingtext" placeholder="Imię">
+                    <label for="floatingtext">Imię</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
+                    <label for="floatingTextarea2">Wiadomość</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-3">
+            <button type="button" class="btn btn-secondary">Wyślij</button>
+        </div>
+    </div>
+    <footer class="footer bg-body-tertiary mt-5 text-center">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Godziny otwarcia</h5>
+                <ul>
+                    <li><strong>Poniedziałek - Piątek:</strong> 8:00 - 18:00</li>
+                    <li><strong>Sobota:</strong> 8:00 - 14:00</li>
+                    <li><strong>Niedziela:</strong> Zamknięte</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Nasze usługi</h5>
+                <ul>
+                    <li>Naprawa telefonów</li>
+                    <li>Naprawa tabletów</li>
+                    <li>Naprawa laptopów</li>
+                    <li>Naprawa konsol</li>
+                    <li>I wiele więcej</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Szybki kontakt</h5>
+                <ul>
+                    <li><strong>Telefon:</strong> +227 213 769 420</li>
+                    <li><strong>Email:</strong> jan.dziaslo@gmail.com</li>
+                    <li><strong>Adres:</strong> Siedlce, ul. czarna 2137</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2025 Tech Serwis. Wszystkie prawa zastrzeżone. | Siedlce | 8 lat doświadczenia w serwisie elektroniki</p>
+        </div>
+    </footer>
+</div>
+
+
+
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
