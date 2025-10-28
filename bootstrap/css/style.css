@@ -41,7 +41,7 @@ body, .col {
 }
 .technik img
 {
-    max-width: 10%;
+    max-width: 75%;
     margin: 0 auto;
     text-align: center;
 }
@@ -136,12 +136,14 @@ body, .col {
 .opinie
 {
     padding: 12px 15px;
-    margin: 0;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .wiadomosc
 {
     padding: 12px 15px;
-    margin: 0;
+    margin-left: 200px;
+    margin-right: 200px;
     max-width: 100%;
 }
 .opinie span
