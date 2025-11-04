@@ -24,6 +24,18 @@ body, .col {
 {
     color: blue;
 }
+.nav-pills .nav-link
+{
+    color: lightblue;
+}
+.nav-pills .nav-link.active {
+    background-color: #2f3338;
+    color: white;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #545961;
+}
 .nawigacja-stron a
 {
     color: lightblue;
@@ -319,4 +331,12 @@ body, .col {
 }
 .kolor {
     color: lightblue;
+}
+.menu-przycisk
+{
+    width: 100%;
+}
+.alabialy
+{
+    color: #dde1e5;
 }

@@ -47,7 +47,71 @@
         <br>
         <h1>Witaj w panelu konta</h1><br>
         <p>Sprawdź historię swoich napraw i zarządzaj ustawieniami konta.</p>
+    </div>
 </div>
+
+<!-- menu -->
+<div class="container-fluid">
+    <!-- przycisk menu dla malych ekranow -->
+    <button class="btn btn-secondary d-lg-none mt-3 menu-przycisk" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuOffcanvas" aria-controls="menuOffcanvas">
+        ☰ Menu
+    </button>
+
+    <div class="row">
+        <!-- menu boczne pc -->
+        <div class="col-lg-3 col-xl-2 d-none d-lg-block">
+            <div class="nav flex-column nav-pills mt-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dane" type="button" role="tab">Dane konta</button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-historia" type="button" role="tab">Historia napraw</button>
+                <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-ustawienia" type="button" role="tab">Ustawienia</button>
+            </div>
+        </div>
+
+        <!-- menu wysuwane dla mobilek -->
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="menuOffcanvas" aria-labelledby="menuOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="menuOffcanvasLabel">Panel konta</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="nav flex-column nav-pills" id="v-pills-tab-mobile" role="tablist" aria-orientation="vertical">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#v-pills-dane" type="button" role="tab" data-bs-dismiss="offcanvas">Dane konta</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-historia" type="button" role="tab" data-bs-dismiss="offcanvas">Historia napraw</button>
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-ustawienia" type="button" role="tab" data-bs-dismiss="offcanvas">Ustawienia</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- zawartosc -->
+        <div class="col-12 col-lg-9 col-xl-10">
+            <div class="tab-content mt-4" id="v-pills-tabContent">
+                <div class="tab-pane fade show active alabialy" id="v-pills-dane" role="tabpanel">
+
+                    <h1 class="text-center">Dane konta</h1>
+                    <div class="fw-bold text-xl-start">
+                    <h3>Nazwa użytkownika:</h3>
+                    <p>Jan Dziąsło</p>
+                    <h5>Imię</h5>
+                    <p>Bartosz:</p>
+                    <h5>Nazwisko:</h5>
+                    <p>Nikitiuk</p>
+                    <h5>Email:</h5>
+                    <p> jan.dziaslo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade alabialy" id="v-pills-historia" role="tabpanel">
+                    <h2>Historia napraw</h2>
+                    <p>Tutaj będzie wyświetlana historia napraw.</p>
+                </div>
+                <div class="tab-pane fade alabialy" id="v-pills-ustawienia" role="tabpanel">
+                    <h2>Ustawienia</h2>
+                    <p>Tutaj będą ustawienia konta.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
