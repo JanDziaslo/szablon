@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szablon strony internetowej</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+</head>
+<body>
+<div class="col">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: lightblue;">
+                <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-middle">
+                <span style="margin-left: 5px">TECH SERWIS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto nawigacja-stron">
+                    <form class="d-flex mb-2 mb-md-0" role="search">
+                        <input class="form-control search-input" type="search" placeholder="Numer zamówienia" aria-label="Szukaj">
+                    </form>
+                    <a class="nav-link" href="index.html">Strona Główna</a>
+                    <a class="nav-link" href="o_nas.html">O nas</a>
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="dropdown ms-3">
+                <a class="nav-link dropdown-toggle p-0 kolor" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/technik.png" alt="technik" width="32" height="32" class="d-inline-block align-middle">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="panel.html">Historia napraw</a></li>
+                    <li><a class="dropdown-item" href="panel.html">Ustawienia</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Wyloguj się</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- naglowek w nawigacji -->
+    <div class="naglowek bg-body-tertiary text-center">
+        <br>
+        <h1>Witaj w panelu konta</h1><br>
+        <p>Sprawdź historię swoich napraw i zarządzaj ustawieniami konta.</p>
+</div>
+
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

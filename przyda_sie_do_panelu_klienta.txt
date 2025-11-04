@@ -1,0 +1,115 @@
+<!-- blok 3 -->
+    <div class="d-none d-lg-block">
+        <div class="row">
+            <div class="col-lg-4 d-flex ">
+                <div class="nav flex-column nav-pills w-100" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <br><br><br>
+                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab">Volvo 25 lat innowacji</button>
+                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab">Innowacyjne systemy bezpieczeństwa</button>
+                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"> Najnowsze modele Volvo</button>
+                </div>
+            </div>
+            <!-- blok 4 -->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active text-center" id="v-pills-home" role="tabpanel">
+                                <h1>Volvo FH – Historia 25 lat innowacji</h1>
+
+                                <p><strong>Volvo FH to jedna z najbardziej udanych serii ciężkich samochodów ciężarowych w historii motoryzacji</strong>, z ponad 400 tysiącami sprzedanych egzemplarzy na całym świecie. Model został wprowadzony na rynek w 1993 roku jako następca legendarnej serii F, której projektowanie rozpoczęło się od zera i trwało 7 lat.</p>
+
+                                <h2>Przełomowe początki</h2>
+
+                                <p>W połowie lat 80. XX wieku firma Volvo Trucks posiadała szeroką ofertę samochodów ciężarowych, jednak istniała konieczność ulepszenia procesu produkcji i stworzenia wspólnej platformy produktowej. Dzięki serii FH firma stworzyła plan przyszłych innowacji, a jednym z przełomowych osiągnięć było nowe dynamiczne podwozie.</p>
+
+                                <p>Jak wspominał Jan Johnsson, ówczesny menedżer ds. produktu: <em>"To usprawnienie procesu przemysłowego zadziałało tak, jakby firma Volvo Trucks uzyskała nowe serce i mózg"</em>.</p>
+
+                                <h2>Rewolucja techniczna</h2>
+
+                                <p>Pod koniec 1993 roku Volvo przedstawiło swój nowy model z całkowicie zaprojektowanym od podstaw 12-litrowym silnikiem D12A. Kluczowe innowacje obejmowały:</p>
+
+                                <ul>
+                                    <li>Wałek rozrządu w głowicy</li>
+                                    <li>Elektronicznie sterowany wtrysk paliwa</li>
+                                    <li>Bezprecedensowe badania aerodynamiczne</li>
+                                    <li>Zaawansowany system hamulców</li>
+                                </ul>
+
+                                <h2>Współczesność i piąta generacja</h2>
+
+                                <p>W 2021 roku Volvo Trucks wprowadziło do produkcji piątą generację modelu FH z wieloma usprawnieniami technicznymi. Obecnie w produkcji znajduje się także najnowsza wersja FH Aero. <strong>Model Volvo FH16 wyposażony jest w silnik D17 o mocy 780 KM</strong> – najmocniejszy silnik jaki kiedykolwiek zamontowano w samochodzie ciężarowym Volvo.</p>
+                            </div>
+                            <div class="tab-pane fade text-center" id="v-pills-profile" role="tabpanel">
+                                <h1>Innowacyjne systemy bezpieczeństwa w ciągnikach Volvo</h1>
+
+                                <p><strong>Volvo Trucks od lat jest liderem w dziedzinie bezpieczeństwa</strong>, realizując ambitną wizję "zero wypadków", której celem jest wyeliminowanie wszystkich wypadków z udziałem samochodów ciężarowych Volvo. Firma konsekwentnie wprowadza nowe technologie, które mają fundamentalne znaczenie dla współczesnego bezpieczeństwa na drogach.</p>
+
+                                <h2>Dziewięć nowych funkcji bezpieczeństwa</h2>
+
+                                <p>W 2023 roku Volvo zaprezentowało dziewięć nowych i zaktualizowanych funkcji bezpieczeństwa, które:</p>
+
+                                <ul>
+                                    <li>Ostrzegają kierowców o zagrożeniach</li>
+                                    <li>Wykrywają przeszkody w martwych polach</li>
+                                    <li>Przewidują potencjalne kolizje</li>
+                                    <li>Dostosowują się do różnych środowisk drogowych</li>
+                                </ul>
+
+                                <p>Anna Wrige Berling, dyrektor ds. bezpieczeństwa ruchu drogowego w Volvo Trucks, podkreśla: <em>"Wprowadzamy dodatkowe systemy bezpieczeństwa, które pozwalają zwiększyć możliwości kierowcy, pomagając chronić zarówno jego, jak i osoby, z którymi dzieli drogę"</em>.</p>
+
+                                <h2>Safety Zones – automatyczne ograniczanie prędkości</h2>
+
+                                <p>Volvo Trucks wprowadziło innowacyjną usługę Safety Zones, która umożliwia automatyczne ograniczanie prędkości ciężarówek w określonych lokalizacjach. Dzięki technologii geofencingu firma transportowa może przypisać konkretne limity prędkości do wskazanych obszarów, takich jak:</p>
+
+                                <ul>
+                                    <li>Bazy transportowe</li>
+                                    <li>Porty</li>
+                                    <li>Okolice szkół</li>
+                                    <li>Centra miast</li>
+                                </ul>
+
+                                <p>Gdy ciężarówka znajdzie się w takiej strefie, silnik ogranicza możliwość przyspieszania, a system automatycznie spowalnia pojazd, jeśli wjedzie on zbyt szybko.</p>
+
+                                <h2>Ochrona pieszych i rowerzystów</h2>
+
+                                <p>W październiku 2024 roku Volvo Trucks wprowadził systemy bezpieczeństwa nowej generacji zaprojektowane specjalnie do ochrony pieszych i rowerzystów. <strong>Najnowszym przykładem jest system aktywnego wspomagania unikania kolizji bocznych</strong>, gdzie kluczowym słowem jest właśnie "aktywny".</p>
+                            </div>
+                            <div class="tab-pane fade text-center" id="v-pills-messages" role="tabpanel">
+                                <h1>Najnowsze modele ciągników Volvo 2024-2025</h1>
+
+                                <p><strong>Rok 2024 i 2025 przynosi bogaty wybór nowych i używanych ciągników siodłowych Volvo</strong>, z modelami dostosowanymi do różnorodnych potrzeb transportowych. Obecnie na rynku dostępne są zarówno klasyczne jednostki z serii FH, jak i najnowsze wersje z zaawansowanymi systemami wspomagania kierowcy.</p>
+
+                                <h2>Volvo FH 500 – flagowy model</h2>
+
+                                <p>Volvo FH 500 to jeden z najpopularniejszych modeli w ofercie producenta, dostępny w wersjach z 2024 i 2025 roku. Nowe egzemplarze wyposażone są w:</p>
+
+                                <ul>
+                                    <li>Automatyczną skrzynię biegów I-Shift</li>
+                                    <li>Kabinę Globe XL</li>
+                                    <li>System I-Park Cool</li>
+                                    <li>Nawigację satelitarną</li>
+                                </ul>
+
+                                <p><strong>Ceny używanych modeli FH 500 z 2022 roku</strong> przy przebiegu od 260 000 do 420 000 km wahają się od 58 000 do 97 000 euro.</p>
+
+                                <h2>Najnowsza seria AERO</h2>
+
+                                <p>W 2024 roku Volvo zaprezentowało prototypy nowych ciężarówek z serii AERO, które reprezentują kolejny krok w ewolucji designu i efektywności paliwowej. Model Volvo FH Aero kontynuuje tradycję innowacji aerodynamicznych, które pozwalają znacząco obniżyć koszty eksploatacji.</p>
+
+                                <p>Nowe ciężarówki są wyposażone w najnowocześniejsze systemy bezpieczeństwa oraz komfortowe kabiny dostosowane do długodystansowego transportu międzynarodowego.</p>
+
+                                <h2>Gama dla różnych zastosowań</h2>
+
+                                <p>Poza serią FH, Volvo oferuje również:</p>
+
+                                <ul>
+                                    <li><strong>FM i FMX</strong> – dostosowane do transportu budowlanego i dystrybucyjnego</li>
+                                    <li><strong>FH16</strong> – z silnikiem o mocy 650 KM w konfiguracji 8x2</li>
+                                    <li><strong>FH12 i FM12</strong> – starsze generacje w cenach od 3900 do 13000 euro</li>
+                                </ul>
+
+                                <p>Dla klientów poszukujących najwyższych mocy dostępne są modele FH16 z zaawansowanymi systemami dźwigowymi HMF oraz osiami kierowanymi i podnoszonymi.</p>
+                            </div>
+                        </div>
+                    </div>

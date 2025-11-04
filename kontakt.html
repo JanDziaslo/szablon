@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="bootstrap/css/style.css">
 </head>
 <body>
-
+<!-- nawigacja -->
 <div class="col">
     <nav class="navbar navbar-expand-md bg-body-tertiary">
         <div class="container-fluid">
@@ -32,11 +32,13 @@
             </div>
         </div>
     </nav>
+<!-- naglowek w nawigacji -->
     <div class="naglowek bg-body-tertiary text-center">
         <br>
         <h1>Kontakt</h1><br>
         <p>Jesteśmy tutaj, aby pomóc. Wybierz najwygodniejszy dla Ciebie sposób kontaktu.</p>
     </div>
+    <!-- ikonki z opcjami kontaktu -->
     <div class="uslugi">
         <div class="uslugi-container">
             <div class="usluga-item">
@@ -54,20 +56,39 @@
         </div>
     </div>
     <br>
+    <!-- formularz -->
     <div class="wiadomosc">
         <h2 class="text-center mb-4">Napisz do nas!</h2>
-        <h5 class="text-center mb-5">Wypełnij formularz, a my skontaktujemy się z Tobą w ciągu 24 godzin.</h5>
+        <h5 class="text-center mb-5">Skontaktuj sie z nami i opisz swój problem, a my postaramy sie ci pomóc.</h5>
         <div class="row g-3">
             <div class="col-md-6">
                 <div class="form-floating ">
-                    <input type="text" class="form-control" id="floatingtext" placeholder="Imię">
+                    <input type="text" class="form-control" id="floatingtext" placeholder="Jan">
                     <label for="floatingtext">Imię</label>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email</label>
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Dziąsło">
+                    <label for="floatingInput">Nazwisko</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="jan@przyklad.pl">
+                    <label for="floatingEmail">Email</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="floatingPhone" placeholder="+48 123 456 789">
+                    <label for="floatingPhone">Numer telefonu</label>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="rodzaj" placeholder="Nprawa...">
+                    <label for="rodzaj">Typ naprawy</label>
                 </div>
             </div>
             <div class="col-12">
@@ -82,12 +103,13 @@
             <button type="button" class="btn btn-secondary">Wyślij</button>
         </div>
     </div>
+    <!-- tabelka -->
     <div class="row">
     <div class="text-center mt-5">
         <h2>Godziny otwarcia</h2>
     </div>
     <div class="godziny-otwarcia-container">
-        <table class="table table-bordered table-striped mx-auto">
+        <table class="table table-bordered table-striped mx-auto text-center">
             <thead>
             <tr>
                 <th>Dzień</th>
@@ -113,6 +135,7 @@
     </div>
     </div>
     <br>
+    <!-- stopka -->
     <footer class="footer bg-body-tertiary mt-5 text-center">
         <div class="footer-content">
             <div class="footer-section">

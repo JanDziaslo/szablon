@@ -9,34 +9,46 @@
     <link rel="stylesheet" href="bootstrap/css/style.css">
 </head>
 <body>
-
- <div class="col">
-     <nav class="navbar navbar-expand-md bg-body-tertiary">
-         <div class="container-fluid">
-             <a class="navbar-brand" href="index.html" style="color: lightblue;">
-                 <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-middle">
-                 <span style="margin-left: 5px">TECH SERWIS</span>
-             </a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarNav">
-                 <div class="navbar-nav ms-auto nawigacja-stron">
-                     <form class="d-flex mb-2 mb-md-0" role="search">
-                         <input class="form-control search-input" type="search" placeholder="Numer zamówienia" aria-label="Szukaj">
-                     </form>
-                     <a class="nav-link" href="index.html">Strona Główna</a>
-                     <a class="nav-link" href="o_nas.html">O nas</a>
-                     <a class="nav-link" href="kontakt.html">Kontakt</a>
-                 </div>
-             </div>
-         </div>
-     </nav>
+<!-- nawigacja -->
+<div class="col">
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="color: lightblue;">
+                <img src="img/favicon.png" alt="Logo" width="32" height="32" class="d-inline-block align-middle">
+                <span style="margin-left: 5px">TECH SERWIS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto nawigacja-stron">
+                    <form class="d-flex mb-2 mb-md-0" role="search">
+                        <input class="form-control search-input" type="search" placeholder="Numer zamówienia" aria-label="Szukaj">
+                    </form>
+                    <a class="nav-link" href="index.html">Strona Główna</a>
+                    <a class="nav-link" href="o_nas.html">O nas</a>
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </div>
+            </div>
+            <div class="dropdown ms-3">
+                <a class="nav-link dropdown-toggle p-0 kolor" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="img/technik.png" alt="technik" width="32" height="32" class="d-inline-block align-middle">
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="panel.html">Historia napraw</a></li>
+                    <li><a class="dropdown-item" href="panel.html">Ustawienia</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Wyloguj się</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+     <!-- naglowek w nawigacji -->
      <div class="naglowek bg-body-tertiary text-center">
          <br>
          <h1>Naprawimy każdą twoją elektronike!</h1><br>
          <a href="o_nas.html" class="btn btn-secondary mb-2">Dowiedz się więcej</a>
-
+    <!-- ikonki z opcjami naprawy -->
      </div>
      <div class="uslugi">
          <div class="text-center">
@@ -63,6 +75,7 @@
          <br>
          <h2 class="text-center opa">I wiele więcej</h2>
      </div>
+     <!-- zmyslone opinie -->
      <br>
      <div class="opinie">
          <h2 class="text-center">Opinie innych klientów o nas</h2><br>
@@ -85,19 +98,39 @@
              </div>
          </div>
      </div>
+     <!-- formularz kontaktowy -->
      <div class="wiadomosc">
          <h2 class="text-center mb-4">Napisz do nas!</h2>
+         <h5 class="text-center mb-5">Skontaktuj sie z nami i opisz swój problem, a my postaramy sie ci pomóc.</h5>
          <div class="row g-3">
              <div class="col-md-6">
                  <div class="form-floating ">
-                     <input type="text" class="form-control" id="floatingtext" placeholder="Imię">
+                     <input type="text" class="form-control" id="floatingtext" placeholder="Jan">
                      <label for="floatingtext">Imię</label>
                  </div>
              </div>
              <div class="col-md-6">
                  <div class="form-floating mb-3">
-                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                     <label for="floatingInput">Email</label>
+                     <input type="text" class="form-control" id="floatingInput" placeholder="Dziąsło">
+                     <label for="floatingInput">Nazwisko</label>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                 <div class="form-floating mb-3">
+                     <input type="email" class="form-control" id="floatingEmail" placeholder="jan@przyklad.pl">
+                     <label for="floatingEmail">Email</label>
+                 </div>
+             </div>
+             <div class="col-md-6">
+                 <div class="form-floating mb-3">
+                     <input type="tel" class="form-control" id="floatingPhone" placeholder="+48 123 456 789">
+                     <label for="floatingPhone">Numer telefonu</label>
+                 </div>
+             </div>
+             <div class="col-md-12">
+                 <div class="form-floating mb-3">
+                     <input type="tel" class="form-control" id="rodzaj" placeholder="Nprawa...">
+                     <label for="rodzaj">Typ naprawy</label>
                  </div>
              </div>
              <div class="col-12">
@@ -106,12 +139,12 @@
                      <label for="floatingTextarea2">Wiadomość</label>
                  </div>
              </div>
-
          </div>
          <div class="text-center mt-3">
          <button type="button" class="btn btn-secondary">Wyślij</button>
          </div>
      </div>
+     <!-- stopka -->
      <footer class="footer bg-body-tertiary mt-5 text-center">
          <div class="footer-content">
              <div class="footer-section">
