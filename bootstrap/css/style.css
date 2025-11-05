@@ -346,3 +346,11 @@ body, .col {
     margin-right: auto;
     max-width: 100%;
 }
+.zakonczone
+{
+    color: limegreen;
+}
+.wip
+{
+    color: orange;
+}
