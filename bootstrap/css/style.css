@@ -340,3 +340,9 @@ body, .col {
 {
     color: #dde1e5;
 }
+.naprawy
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
