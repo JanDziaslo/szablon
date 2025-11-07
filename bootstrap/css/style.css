@@ -22,63 +22,6 @@ body {
     flex-direction: column;
 }
 
-.search-input {
-    border: 2px solid lightblue;
-}
-
-.search-input:focus
-{
-    border: 2px solid blue;
-    box-shadow: 0 0 0px;
-}
-.nav-link
-{
-    color: blue;
-}
-.active
-{
-    color: blue;
-}
-.nav-pills .nav-link
-{
-    color: lightblue;
-}
-.nav-pills .nav-link.active {
-    background-color: #2f3338;
-    color: white;
-}
-
-.nav-pills .nav-link:hover {
-    background-color: #545961;
-}
-.nawigacja-stron a
-{
-    color: lightblue;
-}
-.naglowek p {
-    max-width: 1250px;
-    display: inline-block;
-}
-.zaufanie p
-{
-    padding: 15px;
-    max-width: 1250px;
-    margin: 0 auto;
-    text-align: center;
-}
-.technik
-{
-    max-width: 1030px;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: left;
-}
-
-.technik img
-{
-    max-width: 90%;
-}
-/* Responsywność navbar */
 .navbar {
     padding: 0.5rem 1rem;
 }
@@ -91,9 +34,256 @@ body {
     padding: 0.5rem 0.75rem !important;
 }
 
-/* Formularz wyszukiwania w menu */
 .navbar-collapse .d-flex {
     flex-wrap: wrap;
+}
+
+.nav-link {
+    color: blue;
+}
+
+.active {
+    color: blue;
+}
+
+.nav-pills .nav-link {
+    color: lightblue;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #2f3338;
+    color: white;
+}
+
+.nav-pills .nav-link:hover {
+    background-color: #545961;
+}
+
+.nawigacja-stron a {
+    color: lightblue;
+}
+
+.search-input {
+    border: 2px solid lightblue;
+}
+
+.search-input:focus {
+    border: 2px solid blue;
+    box-shadow: 0 0 0px;
+}
+
+.naglowek {
+    padding: 15px;
+}
+
+.naglowek p {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.zaufanie p {
+    padding: 15px;
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.technik {
+    max-width: 1030px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: left;
+}
+
+.technik img {
+    max-width: 90%;
+}
+
+.uslugi {
+    margin-top: 15px;
+}
+
+.uslugi h2 {
+    margin-bottom: 12px;
+}
+
+.uslugi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.usluga-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.usluga-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.usluga-item span {
+    font-size: x-large;
+    text-align: center;
+    width: 100%;
+}
+
+.opa {
+    margin: 12px;
+}
+
+.opinie {
+    padding: 12px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 79%;
+}
+
+.opinie p {
+    text-align: left;
+}
+
+.opinie .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.opinie .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.opinie .card-text:first-child {
+    margin-bottom: 20px;
+}
+
+.opinie .card-text:last-child {
+    margin-top: auto;
+    text-align: left;
+}
+
+.wiadomosc {
+    padding: 12px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 79%;
+}
+
+.godziny-otwarcia-container {
+    padding: 12px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    width: 79%;
+}
+
+.godziny-otwarcia-container table {
+    width: 100%;
+    font-size: 1rem;
+}
+
+.form-check-input:checked {
+    background-color: #23589C;
+    border-color: #23589C;
+}
+
+.form-check-input:focus {
+    border-color: #23589C;
+}
+
+.footer {
+    margin-top: auto;
+    border-top: 1px solid #dee2e6;
+    padding: 40px 15px 20px;
+    flex-shrink: 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+}
+
+.footer-section h5 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #23589C;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    border-top: 1px solid #dee2e6;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.kolor {
+    color: lightblue;
+}
+
+.menu-przycisk {
+    width: 100%;
+}
+
+.alabialy {
+    color: #dde1e5;
+}
+
+.naprawy {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.zakonczone {
+    color: limegreen;
+}
+
+.wip {
+    color: orange;
+}
+
+@media (max-width: 991px) {
+    .opinie,
+    .wiadomosc {
+        padding: 12px 30px;
+        width: 85%;
+    }
+
+    .godziny-otwarcia-container {
+        padding: 12px 30px;
+        width: 85%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -128,90 +318,16 @@ body {
         padding-left: 0.75rem;
         padding-right: 0.75rem;
     }
-}
-.naglowek
-{
-    padding: 15px;
-}
-.naglowek p
-{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
-}
-.uslugi
-{
-    margin-top: 15px;
-}
-.uslugi h2
-{
-    margin-bottom: 12px;
-}
-.uslugi-container
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    align-items: center;
-    justify-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-.usluga-item
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    width: 100%;
-}
-.usluga-item img
-{
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-}
-.usluga-item span
-{
-    font-size: x-large;
-    text-align: center;
-    width: 100%;
-}
-.opa
-{
-    margin: 12px;
-}
-.opinie
-{
-    padding: 12px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    width: 79%;
-}
 
-.wiadomosc
-{
-    padding: 12px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    width: 79%;
-}
-
-/* Responsywność dla opinie i wiadomosc */
-@media (max-width: 991px) {
     .opinie,
     .wiadomosc {
-        padding: 12px 30px;
-        width: 85%;
+        padding: 12px 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        width: calc(100% - 30px);
     }
-}
 
-@media (max-width: 767px) {
-    .opinie,
-    .wiadomosc {
+    .godziny-otwarcia-container {
         padding: 12px 15px;
         margin-left: 15px;
         margin-right: 15px;
@@ -227,113 +343,7 @@ body {
         margin-right: 10px;
         width: calc(100% - 20px);
     }
-}
-.opinie p
-{
-    text-align: left;
 
-}
-.opinie .card
-{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.opinie .card-body
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-.opinie .card-text:first-child
-{
-    margin-bottom: 20px;
-}
-.opinie .card-text:last-child
-{
-    margin-top: auto;
-    text-align: left;
-}
-
-/* Footer Styles */
-.footer
-{
-    margin-top: auto;
-    border-top: 1px solid #dee2e6;
-    padding: 40px 15px 20px;
-    flex-shrink: 0;
-}
-
-.footer-content
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto 30px;
-}
-
-.footer-section h5
-{
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #23589C;
-}
-
-.footer-section ul
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-section li
-{
-    margin-bottom: 8px;
-    line-height: 1.6;
-}
-
-.footer-bottom
-{
-    border-top: 1px solid #dee2e6;
-    padding-top: 20px;
-    font-size: 0.9rem;
-    color: #6c757d;
-}
-.godziny-otwarcia-container
-{
-    padding: 12px 15px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    width: 79%;
-}
-
-.godziny-otwarcia-container table
-{
-    width: 100%;
-    font-size: 1rem;
-}
-
-/* Responsywność dla godziny-otwarcia-container */
-@media (max-width: 991px) {
-    .godziny-otwarcia-container {
-        padding: 12px 30px;
-        width: 85%;
-    }
-}
-
-@media (max-width: 767px) {
-    .godziny-otwarcia-container {
-        padding: 12px 15px;
-        margin-left: 15px;
-        margin-right: 15px;
-        width: calc(100% - 30px);
-    }
-}
-
-@media (max-width: 480px) {
     .godziny-otwarcia-container {
         padding: 10px;
         margin-left: 10px;
@@ -344,37 +354,4 @@ body {
     .godziny-otwarcia-container table {
         font-size: 0.9rem;
     }
-}
-.kolor {
-    color: lightblue;
-}
-.menu-przycisk
-{
-    width: 100%;
-}
-.alabialy
-{
-    color: #dde1e5;
-}
-.naprawy
-{
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-}
-.zakonczone
-{
-    color: limegreen;
-}
-.wip
-{
-    color: orange;
-}
-.form-check-input:checked {
-    background-color: #23589C;
-    border-color: #23589C;
-}
-
-.form-check-input:focus {
-    border-color: #23589C;
 }
