@@ -2,9 +2,24 @@
     box-sizing: border-box;
 }
 
-body, .col {
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
     max-width: 100%;
+}
+
+.col {
+    flex: 1 0 auto;
+    overflow-x: hidden;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .search-input {
@@ -244,9 +259,10 @@ body, .col {
 /* Footer Styles */
 .footer
 {
-    margin-top: 50px;
+    margin-top: auto;
     border-top: 1px solid #dee2e6;
     padding: 40px 15px 20px;
+    flex-shrink: 0;
 }
 
 .footer-content
@@ -353,4 +369,12 @@ body, .col {
 .wip
 {
     color: orange;
+}
+.form-check-input:checked {
+    background-color: #23589C;
+    border-color: #23589C;
+}
+
+.form-check-input:focus {
+    border-color: #23589C;
 }
