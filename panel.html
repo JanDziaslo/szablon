@@ -219,12 +219,12 @@
 
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
-    // Funkcja do aktywacji zakładki na podstawie hash w URL
+    // na podstawie hasha w url
     function activateTabFromHash() {
         const hash = window.location.hash.substring(1); // Pobierz hash bez #
 
         if (hash) {
-            // Mapowanie hash na ID zakładek
+            // zmiana z hash na id
             const tabMap = {
                 'dane': 'v-pills-dane',
                 'historia': 'v-pills-historia',
