@@ -38,7 +38,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* Responsywność dla dropdown użytkownika */
 @media (max-width: 767.98px) {
     .nawigacja-stron {
         width: 100%;
