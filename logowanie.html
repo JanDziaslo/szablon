@@ -22,14 +22,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ms-auto nawigacja-stron">
-                    <form class="d-flex mb-2 mb-md-0" role="search">
-                        <input class="form-control search-input" type="search" placeholder="Numer zamówienia" aria-label="Szukaj">
-                    </form>
                     <a class="nav-link" href="index.html">Strona Główna</a>
                     <a class="nav-link" href="o_nas.html">O nas</a>
                     <a class="nav-link" href="kontakt.html">Kontakt</a>
                 </div>
             </div>
+            <!-- konto -->
             <div class="dropdown ms-3">
                 <a class="nav-link dropdown-toggle p-0 kolor" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="img/technik.png" alt="technik" width="32" height="32" class="d-inline-block align-middle">
@@ -44,109 +42,33 @@
             </div>
         </div>
     </nav>
-<!-- naglowek w nawigacji -->
+    <!-- naglowek w nawigacji -->
     <div class="naglowek bg-body-tertiary text-center">
         <br>
-        <h1>Kontakt</h1><br>
-        <p>Jesteśmy tutaj, aby pomóc. Wybierz najwygodniejszy dla Ciebie sposób kontaktu.</p>
+        <h1>Zaloguj się</h1><br>
+        <p>Zaloguj sie do swojego konta</p>
     </div>
-    <!-- ikonki z opcjami kontaktu -->
-    <div class="uslugi">
-        <div class="uslugi-container">
-            <div class="usluga-item">
-                <img src="img/telefon3.png" alt="telefon">
-                <span>Kontakt</span><span>+227 213 769 420</span>
-            </div>
-            <div class="usluga-item">
-                <img src="img/email.png" alt="email">
-                <span>Email</span><span>jan.dziaslo@gmail.com</span>
-            </div>
-            <div class="usluga-item">
-                <img src="img/pinezka.png" alt="serce">
-                <span>Wizyta osobista</span><span>Siedlce, ul. czarna 2137</span>
-            </div>
-        </div>
-    </div>
-    <br>
-    <!-- formularz -->
+    <!-- logowanie -->
     <div class="wiadomosc">
-        <h2 class="text-center mb-4">Napisz do nas!</h2>
-        <h5 class="text-center mb-5">Skontaktuj sie z nami i opisz swój problem, a my postaramy sie ci pomóc.</h5>
-        <div class="row g-3">
-            <div class="col-md-6">
-                <div class="form-floating ">
-                    <input type="text" class="form-control" id="floatingtext" placeholder="Jan">
-                    <label for="floatingtext">Imię</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Dziąsło">
-                    <label for="floatingInput">Nazwisko</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="jan@przyklad.pl">
-                    <label for="floatingEmail">Email</label>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" id="floatingPhone" placeholder="+48 123 456 789">
-                    <label for="floatingPhone">Numer telefonu</label>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="form-floating mb-3">
-                    <input type="tel" class="form-control" id="rodzaj" placeholder="Nprawa...">
-                    <label for="rodzaj">Typ naprawy</label>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 120px"></textarea>
-                    <label for="floatingTextarea2">Wiadomość</label>
-                </div>
-            </div>
+    <form>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
         </div>
-        <div class="text-center mt-3">
-            <button type="button" class="btn btn-secondary">Wyślij</button>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
         </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Zapamiętaj mnie</label>
+        </div>
+        <div class="text-center">
+        <button type="submit" class="btn btn-secondary">Zaloguj się</button>
+        </div>
+    </form>
     </div>
-    <!-- tabelka -->
-    <div class="row">
-    <div class="text-center mt-5">
-        <h2>Godziny otwarcia</h2>
-    </div>
-    <div class="godziny-otwarcia-container">
-        <table class="table table-bordered table-striped mx-auto text-center">
-            <thead>
-            <tr>
-                <th>Dzień</th>
-                <th>Godziny</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>Poniedziałek - Piątek</td>
-                <td>8:00 - 18:00</td>
-            </tr>
-            <tr>
-                <td>Sobota</td>
-                <td>8:00 - 14:00</td>
-            </tr>
-            <tr>
-                <td>Niedziela</td>
-                <td>Zamknięte</td>
-            </tr>
-            </tbody>
-        </table>
-
-    </div>
-    </div>
-    <br>
     <!-- stopka -->
     <footer class="footer bg-body-tertiary mt-5 text-center">
         <div class="footer-content">

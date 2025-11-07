@@ -34,8 +34,9 @@
                     <img src="img/technik.png" alt="technik" width="32" height="32" class="d-inline-block align-middle">
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                    <li><a class="dropdown-item" href="panel.html">Historia napraw</a></li>
-                    <li><a class="dropdown-item" href="panel.html">Ustawienia</a></li>
+                    <li><a class="dropdown-item" href="panel.html#dane">Dane konta</a></li>
+                    <li><a class="dropdown-item" href="panel.html#historia">Historia napraw</a></li>
+                    <li><a class="dropdown-item" href="panel.html#ustawienia">Ustawienia</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="#">Wyloguj się</a></li>
                 </ul>
@@ -201,18 +202,14 @@
                     <!-- ustawienia -->
                 <div class="tab-pane fade alabialy" id="v-pills-ustawienia" role="tabpanel">
                     <h2 class="text-center">Ustawienia</h2>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="zgodamarketing">
-                        <label class="form-check-label" for="zgodamarketing">
-                            Zgoda na otrzymywanie informacji marketingowych
-                        </label>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="marketing" checked>
+                        <label class="form-check-label" for="marketing">Zgoda na otrzymywanie informacji marketingowych</label>
                     </div>
                     <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" value="" id="checkNativeSwitch" switch>
-                        <label class="form-check-label" for="checkNativeSwitch">
-                            Zgoda na otrzymywanie informacji marketingowych
-                        </label>
-                    </div>
+                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
+                    <label class="form-check-label" for="switchCheckChecked">Zgoda na otrzymywanie komunikatów dotyczących napraw</label>
+                </div>
                 </div>
             </div>
         </div>
@@ -220,7 +217,37 @@
 </div>
 
 
-
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Funkcja do aktywacji zakładki na podstawie hash w URL
+    function activateTabFromHash() {
+        const hash = window.location.hash.substring(1); // Pobierz hash bez #
+
+        if (hash) {
+            // Mapowanie hash na ID zakładek
+            const tabMap = {
+                'dane': 'v-pills-dane',
+                'historia': 'v-pills-historia',
+                'ustawienia': 'v-pills-ustawienia'
+            };
+
+            const tabId = tabMap[hash];
+
+            if (tabId) {
+
+                const tabButton = document.querySelector(`button[data-bs-target="#${tabId}"]`);
+                if (tabButton) {
+                    const tab = new bootstrap.Tab(tabButton);
+                    tab.show();
+                }
+            }
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', activateTabFromHash);
+    window.addEventListener('hashchange', activateTabFromHash);
+</script>
 </body>
 </html>
+
+
