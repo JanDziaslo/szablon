@@ -21,26 +21,23 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav ms-auto nawigacja-stron">
-                    <form class="d-flex mb-2 mb-md-0" role="search">
-                        <input class="form-control search-input" type="search" placeholder="Numer zamówienia" aria-label="Szukaj">
-                    </form>
-                    <a class="nav-link" href="index.html">Strona Główna</a>
-                    <a class="nav-link" href="o_nas.html">O nas</a>
-                    <a class="nav-link" href="kontakt.html">Kontakt</a>
-                </div>
-            </div>
-            <!-- konto -->
-            <div class="dropdown ms-3">
-                <a class="nav-link dropdown-toggle p-0 kolor" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="img/technik.png" alt="technik" width="32" height="32" class="d-inline-block align-middle">
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                    <li><a class="dropdown-item" href="panel.html#dane">Dane konta</a></li>
-                    <li><a class="dropdown-item" href="panel.html#historia">Historia napraw</a></li>
-                    <li><a class="dropdown-item" href="panel.html#ustawienia">Ustawienia</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Wyloguj się</a></li>
+                <ul class="navbar-nav ms-auto me-0 nawigacja-stron align-items-md-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Strona Główna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="o_nas.html">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+                    <!-- konto -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle p-0 kolor" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="img/technik.png" alt="technik" width="32" height="32" class="d-inline-block align-middle">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="panel.html#dane">Dane konta</a></li>
+                            <li><a class="dropdown-item" href="panel.html#historia">Historia napraw</a></li>
+                            <li><a class="dropdown-item" href="panel.html#ustawienia">Ustawienia</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Wyloguj się</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
