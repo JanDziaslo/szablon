@@ -117,7 +117,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 mt-4">
+                            <div class="col-12 mt-4 mb-3">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="email" placeholder=" " value="jan.dziaslo@dziaslo.dev">
                                     <label for="email">Email:</label>
@@ -266,17 +266,54 @@
             const tabId = tabMap[hash];
 
             if (tabId) {
+                document.querySelectorAll('.nav-pills .nav-link').forEach(btn => {
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-selected', 'false');
+                });
 
-                const tabButton = document.querySelector(`button[data-bs-target="#${tabId}"]`);
-                if (tabButton) {
-                    const tab = new bootstrap.Tab(tabButton);
-                    tab.show();
+                document.querySelectorAll('.tab-pane').forEach(pane => {
+                    pane.classList.remove('show', 'active');
+                });
+
+                const tabButtons = document.querySelectorAll(`button[data-bs-target="#${tabId}"]`);
+
+                tabButtons.forEach(tabButton => {
+                    tabButton.classList.add('active');
+                    tabButton.setAttribute('aria-selected', 'true');
+                });
+
+                const targetPane = document.querySelector(`#${tabId}`);
+                if (targetPane) {
+                    targetPane.classList.add('show', 'active');
                 }
             }
         }
     }
 
-    document.addEventListener('DOMContentLoaded', activateTabFromHash);
+    document.addEventListener('DOMContentLoaded', function() {
+        activateTabFromHash();
+
+        document.querySelectorAll('.dropdown-menu a[href^="panel.html#"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                // Pozwól przeglądarce zmienić hash
+                setTimeout(activateTabFromHash, 10);
+            });
+        });
+
+        const offcanvasElement = document.getElementById('menuOffcanvas');
+        if (offcanvasElement) {
+            const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement) || new bootstrap.Offcanvas(offcanvasElement);
+
+            document.querySelectorAll('#v-pills-tab-mobile .nav-link').forEach(button => {
+                button.addEventListener('click', function() {
+                    setTimeout(() => {
+                        offcanvas.hide();
+                    }, 100);
+                });
+            });
+        }
+    });
+
     window.addEventListener('hashchange', activateTabFromHash);
 </script>
 </body>
