@@ -295,7 +295,6 @@
 
         document.querySelectorAll('.dropdown-menu a[href^="panel.html#"]').forEach(link => {
             link.addEventListener('click', function(e) {
-                // Pozwól przeglądarce zmienić hash
                 setTimeout(activateTabFromHash, 10);
             });
         });
